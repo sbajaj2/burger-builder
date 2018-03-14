@@ -11,6 +11,10 @@ const burger = (props) => {
             });
         });
 
+    console.log("props coming from burger builder", props.ingredients);
+
+    console.log("Object.keys from props", Object.keys(props.ingredients));
+
 
     console.log("converting Object to Array of length = value of item", Object.keys(props.ingredients)
         .map(igKey => {
